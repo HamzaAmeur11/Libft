@@ -14,9 +14,9 @@
 
 static int	nbr_digit(int xb)
 {
-	int			count;
 	long int	x;
-
+	int		count;
+	
 	x = (long int)xb;
 	count = 0;
 	if (x < 0)
@@ -31,8 +31,8 @@ static int	nbr_digit(int xb)
 
 static char	*positive_itoa(int n)
 {
+	int	x;
 	char	*p;
-	int		x;
 
 	if (n == 0)
 	{
@@ -56,9 +56,9 @@ static char	*positive_itoa(int n)
 
 static char	*negative_itoa(int nb)
 {
-	char		*p;
-	int			x;
 	long int	n;
+	char		*p;
+	int		x;
 
 	n = (long int)nb;
 	x = nbr_digit(-n);
